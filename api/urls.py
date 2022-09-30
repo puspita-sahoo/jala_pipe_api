@@ -14,9 +14,9 @@ from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 
-router.register("api", views.ProductAPIView)
-router.register("api", views.CartAPIView)
-router.register("api", views.CartProductAPIView)
+router.register("product", views.ProductAPIView)
+router.register("cart", views.CartAPIView)
+router.register("cartproduct", views.CartProductAPIView)
 
 app_name = "api"
 urlpatterns = router.urls + urlpatterns
